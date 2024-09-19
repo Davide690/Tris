@@ -1,0 +1,76 @@
+/* Stile per il corpo del documento e lo sfondo */
+body {
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Sfondo sfumato */
+    color: white; /* Colore del testo */
+    font-family: 'Arial', sans-serif; /* Font utilizzato */
+    text-align: center; /* Allinea il testo al centro */
+    padding-top: 50px; /* Spazio sopra il contenuto */
+}
+
+/* Stile per il titolo */
+h1 {
+    font-size: 3em; /* Dimensione del font */
+    margin-bottom: 20px; /* Margine sotto il titolo */
+}
+
+/* Stile per la griglia del gioco */
+.game-board {
+    display: grid; /* Usa CSS Grid per la disposizione delle celle */
+    grid-template-columns: repeat(3, 100px); /* 3 colonne da 100px ciascuna */
+    grid-gap: 10px; /* Spazio tra le celle */
+    margin: 20px auto; /* Centra la griglia */
+    padding: 10px; /* Padding interno */
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente */
+    border-radius: 10px; /* Angoli arrotondati */
+    width: max-content; /* La larghezza si adatta al contenuto */
+}
+
+/* Stile per le singole celle */
+.cell {
+    width: 100px; /* Larghezza della cella */
+    height: 100px; /* Altezza della cella */
+    background-color: #34495e; /* Colore di sfondo della cella */
+    display: flex; /* Usa flexbox per centrare il contenuto */
+    align-items: center; /* Allinea verticalmente al centro */
+    justify-content: center; /* Allinea orizzontalmente al centro */
+    font-size: 2.5em; /* Dimensione del simbolo */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    color: white; /* Colore del testo */
+    border-radius: 5px; /* Angoli arrotondati */
+    transition: background-color 0.3s; /* Transizione fluida per il cambio di colore */
+}
+
+/* Cambia il colore della cella al passaggio del mouse */
+.cell:hover {
+    background-color: #2c3e50; /* Colore della cella al passaggio del mouse */
+}
+
+/* Stile per la sezione dello stato del gioco */
+.game-status {
+    margin-top: 20px; /* Margine superiore */
+    font-size: 1.8em; /* Dimensione del font */
+}
+
+/* Stile per la sezione delle vittorie */
+.scoreboard {
+    margin-top: 20px; /* Margine superiore */
+    font-size: 1.2em; /* Dimensione del font */
+}
+
+/* Stile per il pulsante di restart */
+button {
+    background-color: #e74c3c; /* Colore di sfondo del pulsante */
+    color: white; /* Colore del testo del pulsante */
+    padding: 10px 20px; /* Padding interno del pulsante */
+    font-size: 1.2em; /* Dimensione del font del pulsante */
+    border: none; /* Rimuove il bordo */
+    border-radius: 5px; /* Angoli arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    margin-top: 20px; /* Margine superiore */
+    transition: background-color 0.3s; /* Transizione fluida per il cambio di colore */
+}
+
+/* Cambia il colore del pulsante al passaggio del mouse */
+button:hover {
+    background-color: #c0392b; /* Colore del pulsante al passaggio del mouse */
+}
